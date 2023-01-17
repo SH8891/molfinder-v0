@@ -130,7 +130,7 @@ def cal_avg_dist(solutions):
                 min_dist = dist
             if dist > max_dist:
                 max_dist = dist
-
+    print("calculated average distance")
     return dist_sum / (n_ * (n_ - 1) / 2)  # , min_dist, max_dist
 
 
@@ -670,7 +670,9 @@ if __name__ == "__main__":
     # increase_bank_dcut = True  # if True the new conf should be farther than dcut from any conf in bank
     # max_repeat = 999999
     max_repeat = 300
-
+    print("Execution started with")
+    print("nseed ",nseed)
+          
     # a = ChkTime('load file')
 
     chk_load = ChkTime()
